@@ -15,7 +15,7 @@ import { useStoreChampion } from "../store";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
-export default function page() {
+export default function ChampionsPage() {
 
   SessionLoader();
   const championList = useStoreChampion((state) => state.championList);

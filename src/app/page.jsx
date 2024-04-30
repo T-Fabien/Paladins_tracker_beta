@@ -25,7 +25,7 @@ import SessionLoader from "./helper/SessionLoader";
 // Zustand
 import { useStoreChampion } from "./store";
 
-export default function page() {
+export default function Page() {
   SessionLoader();
 
   const championList = useStoreChampion((state) => state.championList);

@@ -118,7 +118,7 @@ export default function TalentsAndCards({ champion_id }) {
           {championCommonCards &&
             championCommonCards.map((commonCard) => {
               return (
-                <CommonChampionCard card={commonCard} cardLevel={cardLevel} />
+                <CommonChampionCard card={commonCard} cardLevel={cardLevel} key={commonCard.card_id1}/>
               );
             })}
         </div>
