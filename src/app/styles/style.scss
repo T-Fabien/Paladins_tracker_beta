@@ -1,0 +1,35 @@
+/* Utils */
+@import "./utils/variables";
+
+/* Base */
+@import "./base/reset_css";
+@import "./base/typography";
+
+/* Component */
+@import "./components/CommonChampionCard";
+
+/* Layout */
+@import "./layout/navbar";
+@import "./layout/loader";
+
+/* Pages */
+@import "./pages/homepage";
+@import "./pages/championspage";
+@import "./pages/championpage";
+
+ // @import "./pages/updates/updates";
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: linear-gradient(90deg,#2d2d31 21px,transparent 1%) 
+    center,linear-gradient(#2d2d31 21px,transparent 1%) 
+    center,#675e7a;
+    background-size: 22px 22px;
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}

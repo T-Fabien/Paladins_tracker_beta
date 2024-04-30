@@ -1,0 +1,51 @@
+.champion__page__herobanner {
+  max-height: 90vh;
+  &__background {
+    height: 90vh;
+    object-fit: cover;
+    object-position: 0% 0%;
+    opacity: 0.8;
+    position: relative;
+    width: 100%;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -70vh;
+    width: 50%;
+    margin-left: 5vw;
+    text-shadow: 3px 0px 7px rgba(0, 0, 0, 0.8), -3px 0px 7px rgba(0, 0, 0, 0.8),
+      0px 4px 7px rgba(0, 0, 0, 0.8);
+    & h1 {
+      font-size: 4rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    & p {
+      font-size: 1.15rem;
+      line-height: 1.75rem;
+    }
+    &__class {
+      align-items: center;
+      display: flex;
+      margin: 1rem 0 0.5rem 0;
+    }
+    &__class__icon {
+      width: 3rem;
+    }
+    &__health {
+      margin: 0.5rem 0;
+    }
+    &__difficulty {
+      margin: 0.5rem 0;
+      & svg:first-child {
+        margin-left: 10px;
+      }
+      & svg {
+        margin-left: 0.25rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import "../components/Championpage/HeroBanner";
+@import "../components/Championpage/Abilities";
+@import "../components/Championpage/AbilityDescription";
+@import "../components/Championpage/TalentsAndCards";
+
+.championpage {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 00px;
+  }

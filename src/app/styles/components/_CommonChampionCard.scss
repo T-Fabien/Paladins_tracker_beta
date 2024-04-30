@@ -1,0 +1,44 @@
+.cards__common__container{
+    position: relative;
+    width: 300px;
+    &__frame{
+        position: relative;
+        width: 300px;
+        z-index: 2;
+    }
+    &__img{
+        position: absolute;
+        top: 48px;
+        left: 29px;
+        width: 242px;
+        z-index: 1;
+    }
+    &__description{
+       &__title{
+        font-size: 1.15rem;
+        position: absolute;
+        text-align: center;
+        top: 240px;
+        width: 100%;
+        z-index: 3;
+       }
+       &__text{
+        color: black;
+        font-size: 0.9rem;
+        line-height: 1.3;
+        margin: 0 15%;
+        position: absolute;
+        text-align: center;
+        top: 280px;
+        width: 70%;
+        z-index: 3;
+       } 
+       &__level{
+        position: absolute;
+        font-size: 1.75rem;
+        bottom: 18px;
+        left: 32px;
+        z-index: 3;
+       }
+    }
+}

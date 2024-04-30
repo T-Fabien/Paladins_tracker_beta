@@ -1,0 +1,38 @@
+.champion__page__abilities {
+  & a {
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    & button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      margin: 0.75rem 1.5rem;
+    }
+    & img{
+        width: 6rem;
+        border-radius: 0.35rem;
+    }
+    & .light_skills p{
+        background-color: $blue
+    }
+    & p {
+        background-color: $gray;
+        border-radius: 0.35rem;
+        color: white;
+        padding: 5px 10px;
+        margin: 20px auto 0;
+        width: max-content;
+    }
+  }
+}

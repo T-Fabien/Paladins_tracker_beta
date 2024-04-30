@@ -1,0 +1,127 @@
+.homepage__hero__img {
+  height: 65vh;
+  object-fit: cover;
+  object-position: 20% 20%;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+
+.homepage__update {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  &__title {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem 7.5vw 1rem 7.5vw;
+    & .fa-arrows-rotate {
+      color: white;
+      font-size: 1.75rem;
+      margin-right: 0.75rem;
+    }
+    & h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-right: 1rem;
+    }
+    & a {
+      color: lighten($gray, 25);
+      font-size: 0.85rem;
+      text-decoration: none;
+    }
+    & .fa-arrow-right {
+      margin-left: 0.25rem;
+    }
+  }
+}
+
+.swiper {
+  max-height: 300px;
+  width: 85vw;
+  border-radius: 25px;
+}
+
+.swiper-slide a {
+  & img {
+    border-radius: 25px;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: $white;
+}
+
+
+.homepage__news {
+
+  margin: 1.5rem 7.5vw 1rem 7.5vw;
+  &__title {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0 1rem 0;
+    & .fa-comments{
+      color: white;
+      font-size: 1.75rem;
+      margin-right: 0.75rem;
+    }
+    & h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-right: 1rem;
+    }
+    & a {
+      color: lighten($gray, 25);
+      font-size: 0.85rem;
+      text-decoration: none;
+    }
+    & .fa-arrow-right {
+      margin-left: 0.25rem;
+    }
+  }
+  &__container {
+    display: flex;
+    gap: 0 30px;
+    justify-content: center;
+    max-width: 65vw;
+    margin: auto;
+
+    & div img {
+      border-radius: 25px;
+      height: 200px;
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+
+  &__content__champion__card{
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+
+    &__title{
+      background-color: rgba(0, 0, 0, 0.65);
+      border-radius: 25px;
+      bottom: 0;
+      font-size: 1.65rem;
+      left: 25%;
+      margin-bottom: 0.15rem;
+      padding: 0.25rem 0.5rem;
+      position: absolute;
+      text-align: center;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.55);
+    }
+  }
+}

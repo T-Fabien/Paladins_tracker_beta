@@ -1,0 +1,53 @@
+.champion__page__abilities__description{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20vw ;
+    &__container{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: center;
+        padding: 0;
+        margin: 1rem 1rem 1rem 0;
+
+        & img{
+            border-radius: 0.35rem;
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+    &__content{
+        margin: 1rem 0 0 1.15rem;
+        height: 100%;
+        & h3{
+            font-size: 2.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: $blue;
+        }
+        &__dmgtype{
+            font-size: 1.35rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        &__text{
+            width: 800px;
+        }
+    }
+    &__cooldown{
+        display: flex;
+        margin: 2rem 1rem 1rem 0;
+        & svg {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 0.5rem;
+        }
+        & p {
+            font-size: 1.35rem;
+            position: relative;
+            top: 0.4rem;
+            max-width: max-content;
+        }
+    }
+}
