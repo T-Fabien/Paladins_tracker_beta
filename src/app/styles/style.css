@@ -101,8 +101,9 @@ header {
   font-weight: 500;
   padding: 0 2.5%;
   position: absolute;
+  height: 70px;
   width: 95%;
-  z-index: 5;
+  z-index: 1;
 }
 header .title-link {
   align-items: center;
@@ -111,7 +112,9 @@ header .title-link {
   font-size: 1.5rem;
   height: 70px;
   text-decoration: none;
-  z-index: 6;
+  position: relative;
+  width: 200px;
+  z-index: 2;
 }
 header .navbar {
   display: flex;
