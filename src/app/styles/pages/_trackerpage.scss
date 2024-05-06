@@ -1,0 +1,44 @@
+.tracker__page {
+  padding-top: 100px;
+  &__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__search {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        
+      &__input {
+        width: 375px;
+        height: 30px;
+        padding-left: 10px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        position: relative;
+        border: none;
+        outline: none;
+      }
+      &__icon{
+        color: black;
+        position: relative;
+        left: 180px;
+        top: -25px;
+      }
+    }
+
+    &__submit{
+        border: 2px solid darken($blue, 30%);
+        border-radius: 5px;
+        background-color: $blue;
+        box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+        color: #fff;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 15px 3px 0 3px;
+        padding: 10px 14px;
+    }
+  }
+}

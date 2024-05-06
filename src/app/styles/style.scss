@@ -16,6 +16,7 @@
 @import "./pages/homepage";
 @import "./pages/championspage";
 @import "./pages/championpage";
+@import "./pages/trackerpage";
 
  // @import "./pages/updates/updates";
 html {
@@ -32,4 +33,11 @@ body {
 
 a {
     color: white;
+}
+
+.development_in_progress{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
 }

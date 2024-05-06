@@ -40,7 +40,7 @@ function Navbar() {
             </Link>
           </li>
 
-          <li>
+          {/* <li>
             <Link
               href="/tierlist"
               className={pathname == "/tierlist" ? "active" : ""}
@@ -48,7 +48,7 @@ function Navbar() {
             >
               TierList
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/tracker" className={pathname == "/tracker" ? "active" : ""}onClick={handleShowMenu}>
               Tracker
