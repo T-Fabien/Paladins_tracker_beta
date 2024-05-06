@@ -2,15 +2,15 @@ export const updates_data = {
     updates: [
       {
         name: `Flash Back`,
-        image:'anniversary.png',
-        date:new Date(2023, 5, 21),
+        image:'banners_fall.png',
+        date:new Date(2023, 2, 25),
         link: 'https://www.paladins.com/news/banners-fall-update-notes'
         // link:'/updates/flash_back',
       },
         {
             name: `Wild hoard`,
             image:'wild_hoard.png',
-            date:new Date(2023, 0, 10),
+            date:new Date(2023, 0, 24),
             link: 'https://www.paladins.com/news/wild-hoard-update-notes'
             // link:'/updates/wild_hoard',
           },
