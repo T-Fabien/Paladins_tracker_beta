@@ -1,53 +1,264 @@
-.champion__page__abilities__description{
+.champion__page__abilities__description {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20vw;
+  &__container {
+    align-items: center;
     display: flex;
-    justify-content: space-between;
-    margin: 0 20vw ;
-    &__container{
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        width: 85%;
-        justify-content: center;
-        padding: 0;
-        margin: 1rem 1rem 1rem 0;
+    flex-direction: row;
+    width: 85%;
+    justify-content: center;
+    padding: 0;
+    margin: 1rem 1rem 1rem 0;
 
-        & img{
-            border-radius: 0.35rem;
-            width: 10rem;
-            height: 10rem;
-        }
+    & img {
+      border-radius: 0.35rem;
+      width: 10rem;
+      height: 10rem;
     }
-    &__content{
-        margin: 1rem 0 0 1.15rem;
-        height: 100%;
-        & h3{
+  }
+  &__content {
+    margin: 1rem 0 0 1.15rem;
+    height: 100%;
+    & h3 {
+      font-size: 2.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: $blue;
+    }
+    &__dmgtype {
+      font-size: 1.35rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    &__text {
+      width: 800px;
+    }
+  }
+  &__cooldown {
+    display: flex;
+    margin: 2rem 1rem 1rem 0;
+    & svg {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.5rem;
+    }
+    & p {
+      font-size: 1.35rem;
+      position: relative;
+      top: 0.4rem;
+      max-width: max-content;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .champion__page__abilities__description {
+    margin: 0 2.5%;
+    &__container {
+      width: fit-content;
+      margin: 1rem 1rem 1rem 0;
+      & img {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+    &__content {
+      margin: 1rem 0 0 1.15rem;
+      height: 100%;
+      & h3 {
+        font-size: 2.25rem;
+      }
+      &__dmgtype {
+        font-size: 1.3rem;
+      }
+      &__text {
+        width: 70vw;
+      }
+    }
+    &__cooldown {
+      margin: 2rem 0rem 0rem 0;
+      & svg {
+        width: 1.75rem;
+        height: 1.75rem;
+      }
+      & p {
+        font-size: 1.35rem;
+        width: 2.6rem;
+        max-width: 2.6rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    .champion__page__abilities__description {
+        margin: 0 2.5%;
+        &__container {
+          width: fit-content;
+          margin: 1rem 1rem 1rem 0;
+          & img {
+            width: 8rem;
+            height: 8rem;
+          }
+        }
+        &__content {
+          margin: 1rem 0 0 1.15rem;
+          height: 100%;
+          & h3 {
             font-size: 2.25rem;
-            font-weight: 600;
+          }
+          &__dmgtype {
+            font-size: 1.3rem;
+          }
+          &__text {
+            width: 75vw;
+          }
+        }
+        &__cooldown {
+          margin: 2rem 0rem 0rem 0;
+          left: -100px;
+          position: relative;
+          & svg {
+            width: 1.75rem;
+            height: 1.75rem;
+          }
+          & p {
+            font-size: 1.35rem;
+            width: 2.6rem;
+            max-width: 2.6rem;
+          }
+        }
+      }
+}
+
+@media screen and (max-width: 768px) {
+    .champion__page__abilities__description {
+        margin: 0 2.5%;
+        &__container {
+          width: fit-content;
+          margin: 1rem 1rem 1rem 0;
+          & img {
+            width: 8rem;
+            height: 8rem;
+          }
+        }
+        &__content {
+          margin: 1rem 0 0 1.15rem;
+          height: 100%;
+          & h3 {
+            font-size: 2.25rem;
+          }
+          &__dmgtype {
+            font-size: 1.3rem;
+          }
+          &__text {
+            width: 75vw;
+          }
+        }
+        &__cooldown {
+          margin: 2rem 0rem 0rem 0;
+          left: -100px;
+          position: relative;
+          & svg {
+            width: 1.75rem;
+            height: 1.75rem;
+          }
+          & p {
+            font-size: 1.35rem;
+            width: 2.6rem;
+            max-width: 2.6rem;
+          }
+        }
+      }
+}
+
+@media screen and (max-width: 600px) {
+    .champion__page__abilities__description {
+        margin: 0 2.5%;
+        &__container {
+          width: fit-content;
+          margin: 1rem 1rem 1rem 0;
+          & img {
+            width: 6rem;
+            height: 6rem;
+          }
+        }
+        &__content {
+          margin: 1rem 0 0 1.15rem;
+          height: 100%;
+          & h3 {
+            font-size: 1.75rem;
             margin-bottom: 0.5rem;
-            color: $blue;
+          }
+          &__dmgtype {
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+          }
+          &__text {
+            font-size: 0.85rem;
+            width: 70vw;
+          }
         }
-        &__dmgtype{
-            font-size: 1.35rem;
-            font-weight: 500;
-            margin-bottom: 1rem;
+        &__cooldown {
+          margin: 2rem 0rem 0rem 0;
+          left: -100px;
+          position: relative;
+          & svg {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+          & p {
+            font-size: 1.15rem;
+            width: 2.6rem;
+            max-width: 2.6rem;
+            top: 0.3rem;
+          }
         }
-        &__text{
-            width: 800px;
+      }
+}
+
+@media screen and (max-width: 425px) {
+    .champion__page__abilities__description {
+        margin: 0 2.5%;
+        &__container {
+          width: fit-content;
+          margin: 1rem 1rem 1rem 0;
+          & img {
+            width: 4rem;
+            height: 4rem;
+          }
         }
-    }
-    &__cooldown{
-        display: flex;
-        margin: 2rem 1rem 1rem 0;
-        & svg {
+        &__content {
+          margin: 1rem 0 0 1.15rem;
+          height: 100%;
+          & h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+          }
+          &__dmgtype {
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+          }
+          &__text {
+            font-size: 0.85rem;
+            width: 70vw;
+          }
+        }
+        &__cooldown {
+          margin: 2rem 0rem 0rem 0;
+          left: -80px;
+          position: relative;
+          & svg {
+            width: 1.35rem;
+            height: 1.35rem;
+          }
+          & p {
+            font-size: 1rem;
             width: 2rem;
-            height: 2rem;
-            margin-right: 0.5rem;
+            max-width: 2rem;
+            top: 0.3rem;
+          }
         }
-        & p {
-            font-size: 1.35rem;
-            position: relative;
-            top: 0.4rem;
-            max-width: max-content;
-        }
-    }
+      }
 }

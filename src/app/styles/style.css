@@ -582,8 +582,10 @@ header .navbar .navbar__burger {
 
 .champion__page__herobanner {
   max-height: 90vh;
+  min-height: 600px;
 }
 .champion__page__herobanner__background {
+  min-height: 600px;
   height: 90vh;
   -o-object-fit: cover;
      object-fit: cover;
@@ -597,8 +599,8 @@ header .navbar .navbar__burger {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: -70vh;
-  width: 50%;
+  top: min(-80vh, -500px);
+  width: 60%;
   margin-left: 5vw;
   text-shadow: 3px 0px 7px rgba(0, 0, 0, 0.8), -3px 0px 7px rgba(0, 0, 0, 0.8), 0px 4px 7px rgba(0, 0, 0, 0.8);
 }
@@ -632,6 +634,104 @@ header .navbar .navbar__burger {
   margin-left: 0.25rem;
 }
 
+@media screen and (max-width: 1440px) {
+  .champion__page__herobanner__description {
+    top: min(-85vh, -500px);
+    width: calc(90% - 6vw);
+    margin-left: 3vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .champion__page__herobanner {
+    min-height: 500px;
+  }
+  .champion__page__herobanner__background {
+    min-height: 500px;
+  }
+  .champion__page__herobanner__description {
+    top: min(-80vh, -450px);
+    width: calc(100% - 6vw);
+    margin-left: 3vw;
+  }
+  .champion__page__herobanner__description h1 {
+    font-size: 2.5rem;
+  }
+  .champion__page__herobanner__description p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+  .champion__page__herobanner__description__class__icon {
+    width: 2.5rem;
+  }
+  .champion__page__herobanner__description__health {
+    margin: 0.35rem 0;
+  }
+  .champion__page__herobanner__description__difficulty {
+    margin: 0.35rem 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .champion__page__herobanner {
+    display: contents;
+  }
+  .champion__page__herobanner__background {
+    display: none;
+  }
+  .champion__page__herobanner__description {
+    padding-top: 100px;
+    top: 0;
+    width: calc(100% - 6vw);
+    margin-left: 3vw;
+    align-items: center;
+  }
+  .champion__page__herobanner__description h1 {
+    font-size: 2.5rem;
+  }
+  .champion__page__herobanner__description p {
+    font-size: 1rem;
+    line-height: 1.65rem;
+  }
+  .champion__page__herobanner__description__class__icon {
+    width: 2.5rem;
+  }
+  .champion__page__herobanner__description__health {
+    margin: 0.25rem 0;
+  }
+  .champion__page__herobanner__description__difficulty {
+    margin: 0.25rem 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .champion__page__herobanner__background {
+    display: none;
+  }
+  .champion__page__herobanner__description {
+    padding-top: 100px;
+    top: 0;
+    width: calc(100% - 6vw);
+    margin-left: 3vw;
+    align-items: center;
+  }
+  .champion__page__herobanner__description h1 {
+    font-size: 2.5rem;
+  }
+  .champion__page__herobanner__description p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .champion__page__herobanner__description__class__icon {
+    width: 2.5rem;
+  }
+  .champion__page__herobanner__description__health {
+    margin: 0.15rem 0;
+  }
+  .champion__page__herobanner__description__difficulty {
+    margin: 0.15rem 0;
+  }
+}
+.champion__page__abilities {
+  display: block;
+}
 .champion__page__abilities a {
   font-size: 3rem;
   font-weight: 500;
@@ -651,6 +751,8 @@ header .navbar .navbar__burger {
   border: none;
   cursor: pointer;
   margin: 0.75rem 1.5rem;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .champion__page__abilities__items img {
   width: 6rem;
@@ -669,6 +771,62 @@ header .navbar .navbar__burger {
   width: max-content;
 }
 
+@media screen and (max-width: 1024px) {
+  .champion__page__abilities__items {
+    margin: 1rem 0;
+  }
+  .champion__page__abilities__items button {
+    margin: 0.75rem 1.25rem;
+  }
+  .champion__page__abilities__items img {
+    width: 6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .champion__page__abilities__items {
+    margin: 1rem 0;
+  }
+  .champion__page__abilities__items button {
+    margin: 0.75rem 1rem;
+  }
+  .champion__page__abilities__items img {
+    width: 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .champion__page__abilities__items {
+    margin: 1rem 0;
+  }
+  .champion__page__abilities__items button {
+    margin: 0.75rem 0.5rem;
+  }
+  .champion__page__abilities__items button div p {
+    font-size: 0.75rem;
+    max-width: 2.75rem;
+    padding: 5px 8px;
+    margin: 16px auto 0;
+  }
+  .champion__page__abilities__items img {
+    width: 3rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .champion__page__abilities__items {
+    margin: 1rem 0;
+  }
+  .champion__page__abilities__items button {
+    margin: 0.75rem 0.25rem;
+  }
+  .champion__page__abilities__items button div p {
+    font-size: 0.75rem;
+    max-width: 2.75rem;
+    padding: 2px 6px;
+    margin: 16px auto 0;
+  }
+  .champion__page__abilities__items img {
+    width: 3rem;
+  }
+}
 .champion__page__abilities__description {
   display: flex;
   justify-content: space-between;
@@ -723,6 +881,217 @@ header .navbar .navbar__burger {
   max-width: max-content;
 }
 
+@media screen and (max-width: 1440px) {
+  .champion__page__abilities__description {
+    margin: 0 2.5%;
+  }
+  .champion__page__abilities__description__container {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 1rem 1rem 1rem 0;
+  }
+  .champion__page__abilities__description__container img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .champion__page__abilities__description__content {
+    margin: 1rem 0 0 1.15rem;
+    height: 100%;
+  }
+  .champion__page__abilities__description__content h3 {
+    font-size: 2.25rem;
+  }
+  .champion__page__abilities__description__content__dmgtype {
+    font-size: 1.3rem;
+  }
+  .champion__page__abilities__description__content__text {
+    width: 70vw;
+  }
+  .champion__page__abilities__description__cooldown {
+    margin: 2rem 0rem 0rem 0;
+  }
+  .champion__page__abilities__description__cooldown svg {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  .champion__page__abilities__description__cooldown p {
+    font-size: 1.35rem;
+    width: 2.6rem;
+    max-width: 2.6rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .champion__page__abilities__description {
+    margin: 0 2.5%;
+  }
+  .champion__page__abilities__description__container {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 1rem 1rem 1rem 0;
+  }
+  .champion__page__abilities__description__container img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .champion__page__abilities__description__content {
+    margin: 1rem 0 0 1.15rem;
+    height: 100%;
+  }
+  .champion__page__abilities__description__content h3 {
+    font-size: 2.25rem;
+  }
+  .champion__page__abilities__description__content__dmgtype {
+    font-size: 1.3rem;
+  }
+  .champion__page__abilities__description__content__text {
+    width: 75vw;
+  }
+  .champion__page__abilities__description__cooldown {
+    margin: 2rem 0rem 0rem 0;
+    left: -100px;
+    position: relative;
+  }
+  .champion__page__abilities__description__cooldown svg {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  .champion__page__abilities__description__cooldown p {
+    font-size: 1.35rem;
+    width: 2.6rem;
+    max-width: 2.6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .champion__page__abilities__description {
+    margin: 0 2.5%;
+  }
+  .champion__page__abilities__description__container {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 1rem 1rem 1rem 0;
+  }
+  .champion__page__abilities__description__container img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .champion__page__abilities__description__content {
+    margin: 1rem 0 0 1.15rem;
+    height: 100%;
+  }
+  .champion__page__abilities__description__content h3 {
+    font-size: 2.25rem;
+  }
+  .champion__page__abilities__description__content__dmgtype {
+    font-size: 1.3rem;
+  }
+  .champion__page__abilities__description__content__text {
+    width: 75vw;
+  }
+  .champion__page__abilities__description__cooldown {
+    margin: 2rem 0rem 0rem 0;
+    left: -100px;
+    position: relative;
+  }
+  .champion__page__abilities__description__cooldown svg {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  .champion__page__abilities__description__cooldown p {
+    font-size: 1.35rem;
+    width: 2.6rem;
+    max-width: 2.6rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .champion__page__abilities__description {
+    margin: 0 2.5%;
+  }
+  .champion__page__abilities__description__container {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 1rem 1rem 1rem 0;
+  }
+  .champion__page__abilities__description__container img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .champion__page__abilities__description__content {
+    margin: 1rem 0 0 1.15rem;
+    height: 100%;
+  }
+  .champion__page__abilities__description__content h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .champion__page__abilities__description__content__dmgtype {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  .champion__page__abilities__description__content__text {
+    font-size: 0.85rem;
+    width: 70vw;
+  }
+  .champion__page__abilities__description__cooldown {
+    margin: 2rem 0rem 0rem 0;
+    left: -100px;
+    position: relative;
+  }
+  .champion__page__abilities__description__cooldown svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .champion__page__abilities__description__cooldown p {
+    font-size: 1.15rem;
+    width: 2.6rem;
+    max-width: 2.6rem;
+    top: 0.3rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .champion__page__abilities__description {
+    margin: 0 2.5%;
+  }
+  .champion__page__abilities__description__container {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 1rem 1rem 1rem 0;
+  }
+  .champion__page__abilities__description__container img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .champion__page__abilities__description__content {
+    margin: 1rem 0 0 1.15rem;
+    height: 100%;
+  }
+  .champion__page__abilities__description__content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .champion__page__abilities__description__content__dmgtype {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  .champion__page__abilities__description__content__text {
+    font-size: 0.85rem;
+    width: 70vw;
+  }
+  .champion__page__abilities__description__cooldown {
+    margin: 2rem 0rem 0rem 0;
+    left: -80px;
+    position: relative;
+  }
+  .champion__page__abilities__description__cooldown svg {
+    width: 1.35rem;
+    height: 1.35rem;
+  }
+  .champion__page__abilities__description__cooldown p {
+    font-size: 1rem;
+    width: 2rem;
+    max-width: 2rem;
+    top: 0.3rem;
+  }
+}
 .champion__page__cards a {
   font-size: 3rem;
   font-weight: 500;
@@ -772,16 +1141,25 @@ header .navbar .navbar__burger {
   height: 2rem;
 }
 .champion__page__cards__common {
-  width: 1264px;
+  max-width: 1264px;
   margin: 2rem auto 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem 1rem;
+  justify-content: center;
 }
 .champion__page__cards__common .cards__common__container {
-  width: calc(25% - 1rem);
+  width: 290px;
 }
 
+@media screen and (max-width: 768px) {
+  .champion__page__cards__talent {
+    flex-direction: column;
+  }
+  .champion__page__cards__talent__container {
+    margin-bottom: 1rem;
+  }
+}
 .championpage {
   align-items: center;
   display: flex;

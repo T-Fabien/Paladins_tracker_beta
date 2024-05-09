@@ -1,6 +1,8 @@
 .champion__page__herobanner {
   max-height: 90vh;
+  min-height: 600px;
   &__background {
+    min-height: 600px;
     height: 90vh;
     object-fit: cover;
     object-position: 0% 0%;
@@ -13,8 +15,8 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    top: -70vh;
-    width: 50%;
+    top: min(-80vh, -500px);
+    width: 60%;
     margin-left: 5vw;
     text-shadow: 3px 0px 7px rgba(0, 0, 0, 0.8), -3px 0px 7px rgba(0, 0, 0, 0.8),
       0px 4px 7px rgba(0, 0, 0, 0.8);
@@ -45,6 +47,109 @@
       }
       & svg {
         margin-left: 0.25rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .champion__page__herobanner {
+    &__description {
+      top: min(-85vh, -500px);
+      width: calc(90% - 6vw);
+      margin-left: 3vw;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .champion__page__herobanner {
+    min-height: 500px;
+    &__background{
+      min-height: 500px;
+    }
+    &__description {
+      top: min(-80vh, -450px);
+      width: calc(100% - 6vw);
+      margin-left: 3vw;
+      & h1 {
+        font-size: 2.5rem;
+      }
+      & p {
+        font-size: 1rem;
+        line-height: 1.75rem;
+      }
+      &__class__icon {
+        width: 2.5rem;
+      }
+      &__health {
+        margin: 0.35rem 0;
+      }
+      &__difficulty {
+        margin: 0.35rem 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .champion__page__herobanner {
+    display: contents;
+    &__background{
+      display: none;
+    }
+    &__description {
+      padding-top: 100px;
+      top: 0;
+      width: calc(100% - 6vw);
+      margin-left: 3vw;
+      align-items: center;
+      & h1 {
+        font-size: 2.5rem;
+      }
+      & p {
+        font-size: 1rem;
+        line-height: 1.65rem;
+      }
+      &__class__icon {
+        width: 2.5rem;
+      }
+      &__health {
+        margin: 0.25rem 0;
+      }
+      &__difficulty {
+        margin: 0.25rem 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .champion__page__herobanner {
+    &__background{
+      display: none;
+    }
+    &__description {
+      padding-top: 100px;
+      top: 0;
+      width: calc(100% - 6vw);
+      margin-left: 3vw;
+      align-items: center;
+      & h1 {
+        font-size: 2.5rem;
+      }
+      & p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+      &__class__icon {
+        width: 2.5rem;
+      }
+      &__health {
+        margin: 0.15rem 0;
+      }
+      &__difficulty {
+        margin: 0.15rem 0;
       }
     }
   }

@@ -49,14 +49,24 @@
     }
   }
   &__common{
-    width: 1264px;
+    max-width: 1264px;
     margin: 2rem auto 0 auto;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem 1rem;
+    justify-content: center;
     & .cards__common__container{
-        width: calc(25% - 1rem);
+        width: 290px;
     }
   }
 
+}
+
+@media screen and (max-width: 768px) {
+ .champion__page__cards__talent{
+  flex-direction: column;
+  &__container{
+    margin-bottom: 1rem;
+  }
+ }
 }
